@@ -9,7 +9,9 @@ public class Game {
         // Task 3 Conditii Daca user alege R si calculator alege tot R -> Draw
         // Task 4 Conditii Daca user alege R si calculator alege tot S -> User wins
         // Task 5 Conditii Daca user alege R si calculator alege tot P -> Computer wins
-
+        // Update 1 Fa un sistem de scor (2 variabile scor user si scor computer care se incrementeaza fiecare in functie de cine castiga)
+        // Update 2 Afiseaaza la fiecare jos scorul curent.
+        // Update 3 Care ajunge primul la 5 sa se termine jocul si se afiseaza castigatorul.
         Scanner scan = new Scanner(System.in);
 
         while (true) {
