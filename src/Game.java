@@ -15,13 +15,52 @@ public class Game {
         while (true) {
             System.out.println("Pick a letter from P (Paper), S (Scissors), R (Rock)");
             char userLetter = scan.next().charAt(0);
+            userLetter = Character.toUpperCase(userLetter);
 
             char[] letters = {'R', 'P', 'S'};
             Random rnd = new Random();
             int index = rnd.nextInt(letters.length);
             char computerLetter = letters[index];
 
-
+            if (userLetter == 'R' && computerLetter == 'R'){
+                System.out.println("Computer chose R");
+                System.out.println("Draw");
+            }
+            else if (userLetter == 'R' && computerLetter == 'P'){
+                System.out.println("Computer chose P");
+                System.out.println("Computer wins!");
+            }
+            else if (userLetter == 'R'){
+                System.out.println("Computer chose S");
+                System.out.println("User wins!");
+            }
+            else if (userLetter == 'P' && computerLetter == 'R'){
+                System.out.println("Computer chose R");
+                System.out.println("User wins!");
+            }
+            else if (userLetter == 'P' && computerLetter == 'P'){
+                System.out.println("Computer chose P");
+                System.out.println("Draw");
+            }
+            else if (userLetter == 'P'){
+                System.out.println("Computer chose S");
+                System.out.println("Computer wins!");
+            }
+            else if (userLetter == 'S' && computerLetter ==  'R'){
+                System.out.println("Computer chose R");
+                System.out.println("Computer wins!");
+            }
+            else if (userLetter == 'S' && computerLetter == 'P'){
+                System.out.println("Computer chose P");
+                System.out.println("User wins!");
+            }
+            else if (userLetter == 'S'){
+                System.out.println("Computer chose S");
+                System.out.println("Draw");
+            }
+            else {
+                System.out.println("Invalid letter");
+            }
         }
 
     }
